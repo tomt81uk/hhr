@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hutchison HR</title>
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<style>
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: #FFFFFF;
+    display: grid;
+    place-items: center;
+  }
+  .logo {
+    display: block;
+    width: min(760px, 84vw);
+    height: auto;
+    animation: rise 900ms cubic-bezier(.2,.7,.2,1) both;
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(8px); } }
+  @media (prefers-reduced-motion: reduce) { .logo { animation: none; } }
+</style>
+</head>
+<body>
+  <main>
+    <picture>
+      <source srcset="/logo.webp" type="image/webp">
+      <img class="logo" src="/logo.png" width="1400" height="318" alt="Hutchison HR — HR &amp; Payroll Systems Consultancy">
+    </picture>
+  </main>
+</body>
+</html>
